@@ -71,6 +71,6 @@ http://127.0.0.1:5173/habitos
 
 ## Autocrítica
 
-Com mais tempo, eu refinaria mais estados de interação, criaria fluxos completos para edição de hábitos, testaria com usuários reais e faria ajustes finais comparando pixel a pixel com o app original.
+Com mais tempo, eu refinaria mais estados de interação, criaria fluxos para edição de hábitos, faria ajustes finais comparando com o app original.
 
 Mesmo assim, o case cumpre o objetivo principal: propor melhorias coerentes com a marca, aumentar clareza visual e tornar a experiência mais estimulante para uso recorrente.
