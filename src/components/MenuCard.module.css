@@ -1,0 +1,107 @@
+.card {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-card);
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 212, 0, 0.28);
+  background: #191925;
+  transform: translateY(-2px);
+}
+
+.card:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.square {
+  min-height: 122px;
+  padding: 17px 8px 32px;
+  align-content: start;
+  justify-items: center;
+  gap: 9px;
+  text-align: center;
+}
+
+.wide {
+  grid-template-columns: 35px 1fr 14px;
+  min-height: 58px;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(255, 212, 0, 0.08);
+  color: var(--color-yellow);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.yellow .icon {
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  color: var(--color-yellow);
+  font-size: 0;
+}
+
+.wide .icon {
+  background: rgba(75, 163, 183, 0.14);
+  font-size: 20px;
+}
+
+.copy {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  width: 100%;
+}
+
+.copy strong {
+  overflow-wrap: normal;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.copy small {
+  color: var(--color-text-faint);
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.arrow {
+  color: var(--color-yellow);
+  justify-self: end;
+}
+
+.square .arrow {
+  position: absolute;
+  right: 50%;
+  bottom: 8px;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(5, 5, 10, 0.32);
+  transform: translateX(50%);
+}
+
+.wide .copy strong {
+  font-size: 12px;
+}

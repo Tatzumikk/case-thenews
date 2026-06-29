@@ -1,0 +1,14 @@
+.stage {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 22px;
+}
+
+@media (max-width: 520px) {
+  .stage {
+    align-items: stretch;
+    padding: 0;
+    background: var(--color-app);
+  }
+}

@@ -1,0 +1,141 @@
+.calendar {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, var(--color-card-strong), #171727);
+  box-shadow: var(--shadow-card);
+  animation: card-enter 420ms ease both;
+}
+
+.monthRow {
+  display: grid;
+  grid-template-columns: 28px 1fr 28px;
+  align-items: center;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.monthRow strong {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.monthRow button {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--color-text-soft);
+  cursor: pointer;
+}
+
+.weekdays,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+}
+
+.weekdays {
+  margin-top: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--color-border-strong);
+  color: var(--color-text-soft);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.grid {
+  row-gap: 8px;
+  margin-top: 8px;
+}
+
+.day,
+.otherMonth {
+  position: relative;
+  display: grid;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.otherMonth {
+  color: var(--color-text-faint);
+}
+
+.inactive {
+  background: var(--color-inactive);
+  color: var(--color-text-soft);
+}
+
+.active {
+  background: var(--color-cyan);
+  color: #071114;
+}
+
+.perfect {
+  background: var(--color-green);
+  color: #061108;
+}
+
+.perfect i {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  color: var(--color-yellow);
+  font-size: 8px;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.currentInactive {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: var(--color-inactive);
+  color: var(--color-text-soft);
+}
+
+.future {
+  background: rgba(58, 58, 70, 0.42);
+  color: var(--color-text-faint);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+  color: var(--color-text-faint);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.legendActive {
+  background: var(--color-cyan);
+}
+
+.legendPerfect {
+  background: var(--color-green);
+}
+
+.legendInactive {
+  background: var(--color-inactive);
+}

@@ -1,0 +1,22 @@
+.screen {
+  position: relative;
+  min-height: inherit;
+  background: var(--color-app);
+}
+
+.content {
+  height: calc(min(852px, 100vh) - 14px);
+  overflow-y: auto;
+  padding-bottom: calc(var(--nav-height) + 16px);
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .content {
+    height: 100vh;
+  }
+}
